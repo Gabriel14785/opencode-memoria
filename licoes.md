@@ -46,3 +46,16 @@ Cada sessão com o opencode gera aprendizado. Aqui registro tudo que pode ser re
   - Projetos novos usar `@eslint/js` + `typescript-eslint` diretamente
   - Sempre rodar `lint` e `typecheck` antes de finalizar
   - `no-explicit-any` virou warn em projetos existentes (migração gradual)
+
+## 2026-05-19 — Projeto da clínica em funcionamento
+- **Contexto:** Criamos o microsaas da clínica estética do zero
+- **Ações:**
+  - Projeto Next.js 16 + Supabase + Drizzle ORM + Tailwind + pnpm
+  - Migrations com 9 tabelas + enums
+  - Auth com login/register
+  - Módulo de Agenda (listar, criar, status)
+  - Setup inicial (profissionais, serviços, clientes)
+- **Lições:**
+  - Supabase MCP não troca de projeto no meio da sessão
+  - Server Actions com `form action` direto funcionam bem pra CRUD simples
+  - Importante tratar `clinica_id` em toda query para multi-tenant
