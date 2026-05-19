@@ -69,3 +69,23 @@ Cada sessão com o opencode gera aprendizado. Aqui registro tudo que pode ser re
 - **Resultado:** Sistema completo com 10 rotas, 3 módulos funcionais
 - **Lições:**
   - Manter consistência nos imports entre pastas de rota (subpastas vs nível atual)
+
+## 2026-05-19 — Reforma visual + módulo Clientes
+- **Contexto:** Gabriel pediu visual mais bonito e clientes estava quebrado
+- **Ações:**
+  - Design system completo (cores, botões, inputs, cards, badges)
+  - Nova sidebar com ícones e hover roxo
+  - Login/Register com tela dividida e gradiente
+  - Página de Clientes criada (listar, criar, excluir)
+  - Setup, Agenda, Estoque, Finanças atualizados visualmente
+- **Resultado:** 12 rotas, visual profissional, tudo funcional
+
+## 2026-05-19 — Melhorias finais
+- **Contexto:** Gabriel pediu toast com som, loading, migrations e integração estoque→finanças
+- **Ações:**
+  - Toast com notificação sonora (beep suave) em todo o sistema
+  - Loading state com SubmitButton + spinner
+  - Drizzle migrations versionadas geradas do schema
+  - Movimentação de estoque cria despesa automaticamente nas finanças
+  - Rota de procedimento com desconto em R$ e %
+- **Status final:** 13 rotas, RLS configurado, MCP novo projeto, skills instaladas
