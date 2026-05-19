@@ -16,9 +16,12 @@
 - (adicione aqui projetos finalizados)
 
 ## Próximo Projeto
-- microsaas para clínica estética
-  - Funcionalidades: agenda, estoque, finanças simples
-  - Stack a definir
+- microsaas para clínica estética — EM ANDAMENTO (em C:\Users\Gabriel\Desktop\microsaas)
+  - Stack: Next.js 16 + TypeScript + Supabase + Drizzle ORM + Tailwind CSS + pnpm
+  - Módulos: agenda, estoque, finanças
+  - Testes: a configurar
+  - Lint: ESLint (eslint-config-next)
+  - Comandos: `pnpm dev`, `pnpm build`, `pnpm lint`, `pnpm db:generate`, `pnpm db:migrate`
 
 ## Ideias
 - (adicione aqui ideias de projetos)
