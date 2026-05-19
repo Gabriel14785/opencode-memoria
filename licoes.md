@@ -59,3 +59,13 @@ Cada sessão com o opencode gera aprendizado. Aqui registro tudo que pode ser re
   - Supabase MCP não troca de projeto no meio da sessão
   - Server Actions com `form action` direto funcionam bem pra CRUD simples
   - Importante tratar `clinica_id` em toda query para multi-tenant
+
+## 2026-05-19 — Módulos Estoque e Finanças concluídos
+- **Contexto:** Gabriel pediu para criar os módulos restantes do microsaas
+- **Ações:**
+  - Estoque: CRUD de produtos + movimentação (entrada/saída) + alerta de estoque baixo
+  - Finanças: CRUD de transações + resumo mensal (receitas/despesas/saldo)
+  - Validação de estoque insuficiente antes de dar saída
+- **Resultado:** Sistema completo com 10 rotas, 3 módulos funcionais
+- **Lições:**
+  - Manter consistência nos imports entre pastas de rota (subpastas vs nível atual)
