@@ -30,6 +30,15 @@ Cada sessão com o opencode gera aprendizado. Aqui registro tudo que pode ser re
   - Desktop cheio de projetos em andamento
   - Usa Supabase como backend (dashboard_financeiro_def)
 
+## 2026-05-19 — Descobertas do Gabriel sobre stack
+- **Contexto:** Gabriel contou mais sobre o que faz
+- **Lições:**
+  - Faz landing pages pra pessoas do bairro
+  - Landing simples: HTML + CSS + JS puro
+  - Landing complexas: Next.js
+  - Próximo projeto grande: microsaas para clínica estética (agenda, estoque, finanças)
+  - Prefere Tailwind CSS pra estilização
+
 ## 2026-05-19 — Lint e testes
 - **Contexto:** Configuramos ESLint + Vitest em dois projetos
 - **Lições:**

@@ -3,6 +3,7 @@
 ## Stack Principal
 - Node.js + TypeScript
 - React / Next.js
+- HTML + CSS + JS puro (landing pages simples)
 - PostgreSQL
 - Docker
 
@@ -19,4 +20,7 @@
 - Comentários apenas quando necessário
 
 ## Preferências Gerais
-- [adicione aqui suas preferências]
+- Landing pages simples: HTML + CSS + JS puro
+- Landing pages complexas: Next.js
+- Clientes locais (pessoal do bairro)
+- CSS: Tailwind CSS sempre que possível

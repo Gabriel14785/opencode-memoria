@@ -15,5 +15,10 @@
 ## Finalizados
 - (adicione aqui projetos finalizados)
 
+## Próximo Projeto
+- microsaas para clínica estética
+  - Funcionalidades: agenda, estoque, finanças simples
+  - Stack a definir
+
 ## Ideias
 - (adicione aqui ideias de projetos)
