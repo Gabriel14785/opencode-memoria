@@ -89,3 +89,20 @@ Cada sessão com o opencode gera aprendizado. Aqui registro tudo que pode ser re
   - Movimentação de estoque cria despesa automaticamente nas finanças
   - Rota de procedimento com desconto em R$ e %
 - **Status final:** 13 rotas, RLS configurado, MCP novo projeto, skills instaladas
+
+## 2026-05-19 — Sessão intensiva de design e UX
+- **Contexto:** Gabriel pediu melhorias visuais e de experiência em várias telas
+- **Ações:**
+  - Agenda: calendário mensal com cores por status (fundo do dia), lista com cards por período, botões visíveis com texto
+  - Novo agendamento: formulário passo a passo com seleção visual
+  - Procedimento: abas (produtos/financeiro), grid de seleção, desconto R$ e % sincronizados
+  - Clientes: grid de cards com gradientes, página de detalhes (próximos + histórico)
+  - Setup: simplificado, só profissional
+  - Sidebar: destaque na aba ativa com `usePathname`
+  - Serviços: página de editar com vinculo de produtos
+  - Migrations: `servico_produtos` + `agendamento_id` em movimentações
+- **Resultado:** 16 rotas, design consistente, UX melhorada
+- **Lições:**
+  - Chaves React (`key`) precisam incluir mês pra evitar stale closures em calendário
+  - Para estado compartilhado entre Server Action e client, retornar `{success/error}` em vez de throw
+  - Links dentro de `<a>` precisam de `e.preventDefault()` no botão interno
