@@ -106,3 +106,18 @@ Cada sessão com o opencode gera aprendizado. Aqui registro tudo que pode ser re
   - Chaves React (`key`) precisam incluir mês pra evitar stale closures em calendário
   - Para estado compartilhado entre Server Action e client, retornar `{success/error}` em vez de throw
   - Links dentro de `<a>` precisam de `e.preventDefault()` no botão interno
+
+## 2026-05-20 — Security Hardening Fase 1
+- **Contexto:** Auditoria de segurança revelou 17 vulnerabilidades críticas (IDOR, cross-tenant, RLS)
+- **Ações:**
+  - Criada camada central de segurança (`lib/auth/guards.ts`): requireUser, getClinicaId, requireSuperAdmin
+  - 12 arquivos de Server Actions corrigidos com .eq("clinica_id", clinicaId) em TODAS as queries
+  - Admin actions com requireSuperAdmin() em todas as 8 funções
+  - Mensagens de erro genéricas no login/register
+  - Removido todos os `data!` e substituídos por validação segura
+  - Correção de `resetarSenha` com redirectTo apontando pro app, não Supabase
+- **Resultado:** 0 build errors, 17 vulnerabilidades críticas resolvidas
+- **Lições:**
+  - Server Actions são endpoints HTTP — middleware protege páginas mas não actions
+  - Sempre usar camada central de auth, nunca confiar só no middleware
+  - `.eq("clinica_id", clinicaId)` é obrigatório em toda query multi-tenant
